@@ -135,7 +135,10 @@ The document has moved
 
 ```
 
-https://user-images.githubusercontent.com/25385987/212557810-9839aa91-d3db-461a-b37d-1c2003cec9e2.mp4
+
+https://user-images.githubusercontent.com/25385987/212558430-7249ee79-2972-44c2-b3aa-1d315fcae1a3.mp4
+
+
 
 
 ### Monitor DNS Traffic 
@@ -162,9 +165,11 @@ COMM=dig PID=140627 TGID=140628 DEV=ens3 PROTO=TCP SRC=1.1.1.1 DST=10.XX.20.37 S
 COMM=dig PID=140627 TGID=140628 DEV=ens3 PROTO=TCP SRC=1.1.1.1 DST=10.XX.20.37 SPT=53 DPT=42469 UID=0 GID=0 DNS_QR=1 DNS_NAME=geekwire.com. DNS_TYPE=A DNS_DATA=104.26.15.176
 ```
   
-  
 
-https://user-images.githubusercontent.com/25385987/212558221-f5631c62-c8ca-4855-91e2-2c467be5b69f.mp4
+
+https://user-images.githubusercontent.com/25385987/212558437-86ed7b2e-2c74-41d5-93b4-3b67a4da949d.mp4
+
+
 
 
  ## Contributing
