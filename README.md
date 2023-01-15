@@ -135,6 +135,9 @@ The document has moved
 
 ```
 
+https://user-images.githubusercontent.com/25385987/212557810-9839aa91-d3db-461a-b37d-1c2003cec9e2.mp4
+
+
 ### Monitor DNS Traffic 
   
 ```
@@ -158,6 +161,12 @@ COMM=dig PID=140627 TGID=140628 DEV=ens3 PROTO=TCP SRC=1.1.1.1 DST=10.XX.20.37 S
 COMM=dig PID=140627 TGID=140628 DEV=ens3 PROTO=TCP SRC=1.1.1.1 DST=10.XX.20.37 SPT=53 DPT=42469 UID=0 GID=0 DNS_QR=1 DNS_NAME=geekwire.com. DNS_TYPE=A DNS_DATA=172.67.69.185
 COMM=dig PID=140627 TGID=140628 DEV=ens3 PROTO=TCP SRC=1.1.1.1 DST=10.XX.20.37 SPT=53 DPT=42469 UID=0 GID=0 DNS_QR=1 DNS_NAME=geekwire.com. DNS_TYPE=A DNS_DATA=104.26.15.176
 ```
+  
+  
+
+https://user-images.githubusercontent.com/25385987/212558221-f5631c62-c8ca-4855-91e2-2c467be5b69f.mp4
+
+
  ## Contributing
   Would you like to contribute to this project? CONTRIBUTING.md has all the details on how to do that.
   
