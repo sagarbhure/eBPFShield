@@ -178,5 +178,5 @@ https://user-images.githubusercontent.com/25385987/212558437-86ed7b2e-2c74-41d5-
  ## 🙋‍ Author
 Developed by [@sagarbhure](https://www.github.com/sagarbhure) 🔨 with ❤️ and ☕. 
   
-📧 Reach out to me at [mail-id](mailto:saagrbhureaerospace@gmail.com) for any questions or collaborations.
+📧 Reach out to me at [mail-id](mailto:sagarbhureaerospace@gmail.com) for any questions or collaborations.
   
