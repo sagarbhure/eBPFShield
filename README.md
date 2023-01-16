@@ -55,7 +55,8 @@ A few of the things you can do with eBPFShield:
 **Current Features: 🔥**
   
 - **`DNS Monitoring`**: Shows all DNS queries in the system.
-- **`IP-Intelligence`**: Monitors outbound connections (tcp/udp) and checks it against threat intelligence lists. Includes script to pull down public threat feeds.
+- **`IP-Intelligence`**: Monitors outbound connections (tcp/udp) and checks it against threat intelligence lists, block **Malicious Destination**.
+Includes script to pull down public threat feeds.
 
 
 **Project Roadmap: 📅**
