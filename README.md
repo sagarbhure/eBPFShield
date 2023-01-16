@@ -4,7 +4,7 @@
 </h1>
 <p align="center"><b>🛡️ Advanced host monitoring and threat detection with eBPF 🛡️</b></p>
 
-<p align="center">A powerful and versatile  <b>IP-Intelligence</b> and <b>DNS monitoring</b> tool built using eBPF and Python. This tool is designed to help you detect and prevent malicious behavior on your network by monitoring outbound connections and checking them against threat intelligence feeds. 🔍</p>
+<p align="center"><b>eBPFShield</b> is a high-performance <b>security tool</b> that utilizes eBPF and Python to provide real-time <b>IP-Intelligence</b> and <b>DNS monitoring</b>. By executing in kernel space, eBPFShield avoids costly context switches and offers efficient <b>detection</b> and <b>prevention</b> of malicious behavior on your network through monitoring of outbound connections and comparison with <b>threat intelligence</b> feeds. 🔍 </p>
 <div align='center'>
 <a href='https://github.com/sagarbhure/eBPFShield/releases'>
   
