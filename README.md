@@ -176,7 +176,8 @@ https://user-images.githubusercontent.com/25385987/212558437-86ed7b2e-2c74-41d5-
   Would you like to contribute to this project? CONTRIBUTING.md has all the details on how to do that.
   
  ## 🙋‍ Author
-Developed by [@sagarbhure](https://www.github.com/sagarbhure) 🔨 with ❤️ and ☕. 
+Developed by [@sagarbhure](https://www.github.com/sagarbhure) 🔨 with ❤️ and ☕, Visit me [🌐sagarbhure.com](www.sagarbhure.com).
   
-📧 Reach out to me at [mail-id](mailto:sagarbhureaerospace@gmail.com) for any questions or collaborations.
+  📧 Reach out to me at [mail-id](mailto:sagarbhureaerospace@gmail.com) for any questions or collaborations
+ or connect with me on [@LinkedIn](https://www.linkedin.com/in/sagarbhure/) 💻.
   
