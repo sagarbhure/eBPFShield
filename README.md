@@ -2,9 +2,9 @@
   <img alt="cgapp logo" src="https://github.com/sagarbhure/certificates/blob/main/ebpf%20-%20Copy.PNG" width="284px"/><br/>
   <p>Advanced IP-Intelligence & DNS Monitoring using eBPF</p>
 </h1>
-<p align="center"><b>Advanced host monitoring and threat detection with eBPF</b></p>
+<p align="center"><b>🛡️ Advanced host monitoring and threat detection with eBPF 🛡️</b></p>
 
-<p align="center">A powerful and versatile  <b>IP-Intelligence</b> and <b>DNS monitoring</b> tool built using eBPF and Python. This tool is designed to help you detect and prevent malicious behavior on your network by monitoring outbound connections and checking them against threat intelligence feeds. </p>
+<p align="center">A powerful and versatile  <b>IP-Intelligence</b> and <b>DNS monitoring</b> tool built using eBPF and Python. This tool is designed to help you detect and prevent malicious behavior on your network by monitoring outbound connections and checking them against threat intelligence feeds. 🔍</p>
 <div align='center'>
 <a href='https://github.com/sagarbhure/eBPFShield/releases'>
   
@@ -22,24 +22,22 @@
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Dependencies](#dependencies)
-- [Usage](#usage)
+- [Introduction](#-introduction)
+- [Features](#-features)
+- [Dependencies](#-dependencies)
+- [Usage](#-usage)
 - [Sample Output](#sample-output)
-- [Contributing](#contributing)
-- [Author](#author)
+- [Contributing](#-contributing)
+- [Author](#-author)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Introduction
+## 📝 Introduction
 
-[![Build Status](https://img.shields.io/travis/gitpoint/git-point.svg?style=flat-square)](https://travis-ci.org/gitpoint/git-point)
-[![Coveralls](https://img.shields.io/coveralls/github/gitpoint/git-point.svg?style=flat-square)](https://coveralls.io/github/gitpoint/git-point)
-[![All Contributors](https://img.shields.io/badge/all_contributors-73-orange.svg?style=flat-square)](./CONTRIBUTORS.md)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
-[![Gitter chat](https://img.shields.io/badge/chat-on_gitter-008080.svg?style=flat-square)](https://gitter.im/git-point)
+  [![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)]()
+   [![Known Vulnerabilities](https://snyk.io/test/github/dwyl/hapi-auth-jwt2/badge.svg?targetFile=package.json)]()
+[![Build Pass](https://img.shields.io/badge/start%20with-why%3F-brightgreen.svg?style=flat)]()
+ [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)]()
 
 Welcome to eBPFShield, a powerful and intuitive security tool for monitoring and protecting your servers. Featuring both <b>IP-Intelligence</b> and <b>DNS monitoring</b> capabilities, eBPFShield utilizes the power of ebpf and python to provide real-time monitoring and actionable insights for identifying and mitigating potential threats.
   
@@ -51,16 +49,16 @@ Say goodbye to constantly monitoring your servers with tcpdump and hello to a mo
   <img src = "https://i.itworldcanada.com/wp-content/uploads/2015/02/Feature-Linux-logo-and-mascot.jpg" width=350>
 </p>
 
-## Features
+## 🛠 Features
 A few of the things you can do with eBPFShield:
 
-**Current Features:**
+**Current Features: 🔥**
   
 - **`DNS Monitoring`**: Shows all DNS queries in the system.
 - **`IP-Intelligence`**: Monitors outbound connections (tcp/udp) and checks it against threat intelligence lists. Includes script to pull down public threat feeds.
 
 
-**Project Roadmap:**
+**Project Roadmap: 📅**
 
 - Support for IPv6 and non-standard DNS ports for improved coverage and detection
 - Automated IP reputation analysis using **Machine Learning** algorithms
@@ -68,12 +66,12 @@ A few of the things you can do with eBPFShield:
 - JSON output for easy integration with a **UI** dashboard
 - Detection of DNS packets on non-standard ports
   
- ## Dependencies
+ ## 📦 Dependencies
  ###### Installation
  
   `apt install python3-bpfcc bpfcc-tools libbpfcc linux-headers-$(uname -r)`
   
- ## Usage
+ ## 🚀 Usage
   This tool monitors outbound connections (tcp/udp, ipv4 only) and checks it against threat intelligence lists. There is a script included that pulls down two public feeds, the list of active tor exit nodes and Talos' IP blacklist. Just run `./update_feeds.sh` in the root directory of this project and it'll populate the `ip_feeds/` directory. You can add your own lists to that directory as well.
 
 Run `python main.py` to get started. Out of the box it will not take any action, it'll just print violations as it sees them.
@@ -102,7 +100,7 @@ There are four actions currently supported via the `--block` flag:
 If you're interested in debugging, the `--verbose` flag may be useful to you. This tells the program to print all connections it sees, not just malicious ones.
   
 ## Sample Output
-### Block Malicious Destination
+### Block Malicious Destination 🚫
 
 1. In one terminal with root privileges: `$ sudo python main.py --action kill`
 2. In another terminal as any user, let's use curl to send an HTTP request to a Tor exit node and another one to google.
@@ -141,7 +139,7 @@ https://user-images.githubusercontent.com/25385987/212558430-7249ee79-2972-44c2-
 
 
 
-### Monitor DNS Traffic 
+### Monitor DNS Traffic 🔍
   
 ```
 root@host:~# dig @1.1.1.1 google.com +tcp +short
@@ -172,8 +170,13 @@ https://user-images.githubusercontent.com/25385987/212558437-86ed7b2e-2c74-41d5-
 
 
 
- ## Contributing
+ ## 🤝 Contributing 
+  [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/sagarbhure/eBPFShield/blob/main/CONTRIBUTING.md)
+  
   Would you like to contribute to this project? CONTRIBUTING.md has all the details on how to do that.
   
- ## Author
- [@sagarbhure](https://www.github.com/sagarbhure)
+ ## 🙋‍ Author
+Developed by [@sagarbhure](https://www.github.com/sagarbhure) 🔨 with ❤️ and ☕. 
+  
+📧 Reach out to me at [mail-id](mailto:saagrbhureaerospace@gmail.com) for any questions or collaborations.
+  
