@@ -1,51 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>eBPFShield - Advanced IP-Intelligence & DNS Monitoring</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="animations.js"></script>
+<title>🛡️ eBPFShield</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>Text Animation</title>
+	<style>
+	ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #023020;
+}
+		* {
+			padding: 0;
+			margin: 0;
+			font-family: sans-serif;
+		}
+
+		body {
+			background: black;
+		}
+
+		.container {
+			text-align: center;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
+		}
+
+		.container span {
+			display: block;
+		}
+
+		.text1 {
+			color: white;
+			font-size: 70px;
+			font-weight: 700;
+			letter-spacing: 8px;
+			margin-bottom: 20px;
+			background: black;
+			position: relative;
+			animation: text 3s 1;
+		}
+
+		.text2 {
+			font-size: 30px;
+			color: darkgreen;
+			font-family: Georgia, serif;
+		}
+
+		@keyframes text {
+			0% {
+				color: black;
+				margin-bottom: -40px;
+			}
+
+			30% {
+				letter-spacing: 25px;
+				margin-bottom: -40px;
+			}
+
+			85% {
+				letter-spacing: 8px;
+				margin-bottom: -40px;
+			}
+		}
+	</style>
 </head>
+
 <body>
-  <h1 align="center">
+<ul>
+  <li><a style="font-family:verdana;" class="active" href="#home">Home</a></li>
+  <li><a style="font-family:verdana;" href="#monitoring">DNS Monitoring</a></li>
+  <li><a style="font-family:verdana;" href="#intelligence">IP Intelligence</a></li>
+  <li><a style="font-family:verdana;" href="#roadmap">Project Roadmap</a></li>
+  <li><a style="font-family:verdana;" href="#contact">Contact</a></li>
+</ul>
+	<div class="container">
+		<div class="row">
+			<span class="text1">Hello!</span>
+			<span class="text2">eBPFShield</span>
+			<span class="text2">Advanced host monitoring and threat detection with eBPF</span>
+		</div>
+	</div>
+</body>
 
-  <p>Advanced IP-Intelligence & DNS Monitoring using eBPF</p>
-</h1>
-<p align="center"><b>🛡️ Advanced host monitoring and threat detection with eBPF 🛡️</b></p>
-
-<p align="center"><b>eBPFShield</b> is a high-performance <b>security tool</b> that utilizes eBPF and Python to provide real-time <b>IP-Intelligence</b> and <b>DNS monitoring</b>. By executing in kernel space, eBPFShield avoids costly context switches and offers efficient <b>detection</b> and <b>prevention</b> of malicious behavior on your network through monitoring of outbound connections and comparison with <b>threat intelligence</b> feeds. 🔍 </p>
-  <header>
-    <nav>
-      
-    </nav>
-  </header>
-  <section id="intro">
-    <h1>eBPFShield - Advanced IP-Intelligence & DNS Monitoring</h1>
-    <p>A powerful and versatile IP-Intelligence and DNS monitoring tool built using eBPF and Python. This tool is designed to help you detect and prevent malicious behavior on your network by monitoring outbound connections and checking them against threat intelligence feeds.</p>
-  </section>
-  <section id="features">
-    <h2>Features</h2>
-    <ul>
-      <li>DNS Monitoring: Shows all DNS queries in the system.</li>
-      <li>IP-Intelligence: Monitors outbound connections (tcp/udp) and checks it against threat intelligence lists. Includes script to pull down public threat feeds.</li>
-    </ul>
-  </section>
-  <section id="usage">
-    <h2>Usage</h2>
-    <p>This tool monitors outbound connections (tcp/udp, ipv4 only) and checks it against threat intelligence lists. There is a script included that pulls down two public feeds, the list of active tor exit nodes and Talos' IP blacklist. Just run ./update_feeds.sh in the root directory of this project and it'll populate the ip_feeds/ directory. You can add your own lists to that directory as well.</p>
-  </section>
-  <section id="demo">
-    <h2>Demo</h2>
-    <p>Check out our demo video to see eBPFShield in action!</p>
-    <video width="320" height="240" controls>
-      <source src="Block Blacklist IP.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </section>
-  <section id="contributing">
-    <h2>Contributing</h2>
-    <p>We welcome contributions to eBPFShield! Please see our <a href="CONTRIBUTING.md">contributing guidelines</a> for more information.</p>
-  </section>
-  <section id="author">
-    <h2>Author</h2>
-    <p>eBPFShield is developed and maintained by [Your Name].</p>
-  </section>
+</html>
