@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+  <title>eBPFShield - Advanced IP-Intelligence & DNS Monitoring</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="animations.js"></script>
 </head>
 <body>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
-</body>
-</html>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#contributing">Contributing</a></li>
+        <li><a href="#author">Author</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="intro">
+    <h1>eBPFShield - Advanced IP-Intelligence & DNS Monitoring</h1>
+    <p>A powerful and versatile IP-Intelligence and DNS monitoring tool built using eBPF and Python. This tool is designed to help you detect and prevent malicious behavior on your network by monitoring outbound connections and checking them against threat intelligence feeds.</p>
+  </section>
+  <section id="features">
+    <h2>Features</h2>
+    <ul>
+      <li>DNS Monitoring: Shows all DNS queries in the system.</li>
+      <li>IP-Intelligence: Monitors outbound connections (tcp/udp) and checks it against threat intelligence lists. Includes script to pull down public threat feeds.</li>
+    </ul>
+  </section>
+  <section id="usage">
+    <h2>Usage</h2>
+    <p>This tool monitors outbound connections (tcp/udp, ipv4 only) and checks it against threat intelligence lists. There is a script included that pulls down two public feeds, the list of active tor exit nodes and Talos' IP blacklist. Just run ./update_feeds.sh in the root directory of this project and it'll populate the ip_feeds/ directory. You can add your own lists to that directory as well.</p>
+  </section>
+  <section id="demo">
+    <h2>Demo</h2>
+    <p>Check out our demo video to see eBPFShield in action!</p>
+    <video width="320" height="240" controls>
+      <source src="demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+  <section id="contributing">
+    <h2>Contributing</h2>
+    <p>We welcome contributions to eBPFShield! Please see our <a href="CONTRIBUTING.md">contributing guidelines</a> for more information.</p>
+  </section>
+  <section id="author">
+    <h2>Author</h2>
+    <p>eBPFShield is developed and maintained by [Your Name].</p>
+  </section>
