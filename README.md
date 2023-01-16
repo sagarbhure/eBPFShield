@@ -59,7 +59,7 @@ A few of the things you can do with eBPFShield:
 Includes script to pull down public threat feeds.
 
 
-**Project Roadmap: 📅**
+**Feature Roadmap: 📅**
 
 - Support for IPv6 and non-standard DNS ports for improved coverage and detection
 - Automated IP reputation analysis using **Machine Learning** algorithms
