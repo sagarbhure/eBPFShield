@@ -46,7 +46,7 @@ Say goodbye to constantly monitoring your servers with tcpdump and hello to a mo
 **Available for ~~Windows~~, Linux and Ubuntu.**
 
 <p align="center">
-  <img src = "https://i.itworldcanada.com/wp-content/uploads/2015/02/Feature-Linux-logo-and-mascot.jpg" width=350>
+  <img src = "https://github.com/sagarbhure/eBPFShield/blob/main/.github/images/linux_ubuntu.png" width=350>
 </p>
 
 ## 🛠 Features
