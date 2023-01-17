@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  font-family: verdana;
+  padding: 20px 30px;
+  background-color: green; 
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+   background-color: lightblue;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>2022 Q4</h2>
+      <p>Our current feature, IP-Intelligence & DNS Monitoring, has just been released in Q4 of the 2022. In Q1, we will focus on bug fixes and improving the overall performance of the tool. We will also be working on adding new threat intelligence feeds to the tool to increase its effectiveness.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2023 Q1</h2>
+      <p>In Q1, we will be adding support for IPv6 to the tool. This will allow the tool to monitor and protect against threats on both IPv4 and IPv6 networks. Additionally, we will be implementing automated IP reputation analysis using Machine Learning algorithms to improve the accuracy of the tool.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2023 Q2</h2>
+      <p>In Q2, we will be integrating eBPFShield with popular SIEM systems for centralized monitoring and alerting. This will make it easier for users to monitor and protect multiple servers from a single location. Additionally, we will be working on adding the ability to detect DNS packets on non-standard ports to improve the coverage and detection capabilities of the tool.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2023 Q3</h2>
+      <p>In Q3, we will be adding a JSON output feature to eBPFShield. This will allow users to easily integrate the tool with a UI dashboard for real-time monitoring and alerting. Additionally, we will be working on improving the usability of the tool by adding more detailed documentation and tutorials.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2023 Q4</h2>
+      <p>In Q4, we will be adding a feature to take action on malicious connections. This will include options such as suspending or killing the process, and taking a core dump of it for forensics. Additionally, we will be working on improving the overall security of the tool by adding encryption and authentication features.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2024 Q1</h2>
+      <p>In 2024 Q1, we will be working on expanding the support for different operating systems. This will include adding support for Windows and macOS, in addition to Linux and Ubuntu. Additionally, we will be working on adding support for non-standard DNS ports to improve the coverage and detection capabilities of the tool.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
