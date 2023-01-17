@@ -73,7 +73,9 @@ Includes script to pull down public threat feeds.
   `apt install python3-bpfcc bpfcc-tools libbpfcc linux-headers-$(uname -r)`
   
  ## 🚀 Usage
-  This tool monitors outbound connections (tcp/udp, ipv4 only) and checks it against threat intelligence lists. There is a script included that pulls down two public feeds, the list of active tor exit nodes and Talos' IP blacklist. Just run `./update_feeds.sh` in the root directory of this project and it'll populate the `ip_feeds/` directory. You can add your own lists to that directory as well.
+  This tool monitors outbound connections (tcp/udp, ipv4 only) and checks it against threat intelligence lists. There is a script included that pulls down two public feeds, the list of active tor exit nodes and Talos' IP blacklist. Just run `./update_feeds.sh` in the root directory of this project and it'll populate the `ip_feeds/` directory. You can add your custom lists to that directory as well. 
+
+You can run the `update_feeds.sh` script in a cron job using `crontab` to regularly update the threat intelligence feed list. This ensures that the list stays up-to-date and that eBPFShield is able to detect and prevent the latest threats.
 
 Run `python main.py` to get started. Out of the box it will not take any action, it'll just print violations as it sees them.
 
