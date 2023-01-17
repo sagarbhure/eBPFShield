@@ -251,16 +251,13 @@ def print_dns(cpu, data, size):
     daddr = ".".join(map(str, [daddr >> 24 & 0xff, daddr >> 16 & 0xff, daddr >> 8 & 0xff, daddr & 0xff]))
 
     # If the transport layer protocol is UDP:
-    print("proto: ", proto)
     if proto == 17:
-        print("sagarbhure udp")
         udp_packet = ip_packet[len_iph:]
         (sport, dport) = unpack('!HH', udp_packet[:4])
         # UDP datagram header length is 8 bytes:
         dns_packet = udp_packet[8:]
     # If the transport layer protocol is TCP:
     elif proto == 6:
-        print("sagarbhure tcp")
         tcp_packet = ip_packet[len_iph:]
         # The length of the TCP packet header is also not fixed due to the optional options.
         # Of the entire TCP header we are only interested in the data up to the 13th byte
@@ -307,7 +304,6 @@ def process_netevent(cpu, data, size):
     ip_port = socket.inet_ntoa(struct.pack("I", event.port))
 #    ip_comm = socket.inet_ntoa(struct.pack("I", event.comm))
 
-    print('sagar',event.comm, event.port)
 
     if args.verbose:
         printb(b"\t%s (%d) %s:%d" % (
