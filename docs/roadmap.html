@@ -3,6 +3,32 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #023020;
+}
 * {
   box-sizing: border-box;
 }
@@ -141,6 +167,13 @@ body {
 </style>
 </head>
 <body>
+<ul>
+  <li><a style="font-family:verdana;" class="active" href="#home">Home</a></li>
+  <li><a style="font-family:verdana;" href="Network Monitor.mp4">DNS Monitoring</a></li>
+  <li><a style="font-family:verdana;" href="Block Blacklist IP.mp4">IP Intelligence</a></li>
+  <li><a style="font-family:verdana;" href="roadmap.html">Project Roadmap</a></li>
+  <li><a style="font-family:verdana;" href="mailto:sagarbhureaerospace@gmail.com">Contact</a></li>
+</ul>
 
 <div class="timeline">
   <div class="container left">
