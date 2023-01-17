@@ -304,7 +304,6 @@ def process_netevent(cpu, data, size):
     ip_port = socket.inet_ntoa(struct.pack("I", event.port))
 #    ip_comm = socket.inet_ntoa(struct.pack("I", event.comm))
 
-    #print('sagar',event.comm, event.port)
 
     if args.verbose:
         printb(b"\t%s (%d) %s:%d" % (
