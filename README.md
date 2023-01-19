@@ -61,8 +61,8 @@ Includes script to pull down public threat feeds.
 
 **Feature Roadmap: 📅**
 
-- Support for IPv6 and non-standard DNS ports for improved coverage and detection
 - Automated IP reputation analysis using **Machine Learning** algorithms
+- Support for IPv6 and non-standard DNS ports for improved coverage and detection
 - Integration with popular **SIEM** systems for centralized monitoring and alerting
 - JSON output for easy integration with a **UI** dashboard
 - Detection of DNS packets on non-standard ports
